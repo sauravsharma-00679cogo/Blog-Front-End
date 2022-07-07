@@ -1,0 +1,210 @@
+/* CSS RESET  */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+body{
+  font-family: 'Baloo Tamma 2', cursive;
+}
+main{
+  scroll-snap-type: y mandatory;
+}
+/* css for logo in navbar */
+header div img{
+  width: 179px;
+  margin: 4px 8px;}
+/* css for header  */
+.header::before{
+  content: "";
+  position: absolute;
+  background: url("https://images.unsplash.com/photo-1574169208507-84376144848b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=879&q=80") no-repeat center center/cover;
+  min-height: 75px;
+  width: 100%;
+  z-index: -1;
+}
+.homeSection::before{
+  content: "";
+  position: absolute;
+  background: url("https://images.unsplash.com/photo-1574169208507-84376144848b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=879&q=80") no-repeat center center/cover;
+  min-height: 517px;
+  width: 100%;
+  z-index: -1;
+}
+/* Header part  */
+.header{
+  display: flex;
+  /* background-color: #2b2d33; */
+  justify-content: space-around;
+  position: relative;
+  
+}
+/* Navigation Bar Styling */
+.navbar ul{
+  display: flex;
+  
+}
+.navbar ul li {
+  list-style: none;
+  padding: 5px 18px;
+  margin: 9px 20px;
+}
+
+.navbar ul li a{
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+  
+}
+/* Navigation bar Hover */
+.navbar ul li:hover a{
+  color: black;
+  
+}
+
+.navbar ul li:hover {
+  background-color: cyan;
+  border: 2px solid cyan;
+  border-radius: 25px;
+}
+
+.navbar ul li a:hover{
+  color: black;
+  
+}
+
+/* Home Section  */
+.homeSection{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10rem;
+}
+.Hometitle{
+  font-size: 106px;
+  line-height: 67px;
+  color: antiquewhite;
+}
+.homeDetail{
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 90px;
+  color: aqua;
+}
+.btn{
+  width: 213px;
+    font-size: 20px;
+    padding: 7px 20px;
+    border-radius: 20px;
+    border: none;
+    background: yellow;
+    color: red;
+}
+.btn:hover{
+  background-color: rgb(226, 226, 130);
+  cursor: pointer;
+}
+/* Blog css */
+.blogMainContainer{
+  display: flex;
+  flex-direction: column;
+  padding: 155px;
+}
+.blogTitleImg{
+  display: flex;
+}
+.titleDet{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.blogTitleImg img{
+  /* border: 2px solid black; */
+  margin: 10px;
+  padding: 10px;
+  width: 200px;
+  height: 134px;
+}
+.container{
+  margin: 5px;
+  padding: 5px;
+}
+.author{
+  font-size: 13px;
+}
+.blogTitle{
+  font-size: 22px;
+  font-weight: 700;
+  width: 33vw;
+}
+.blogDescript{
+  font-size: 16px;
+  width: 33vw;
+}
+.aboutSection{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10rem;
+}
+.aboutTitle{
+  background: none;
+  font-size: 90px;
+  line-height: 108px;
+  color: black;
+}
+.aboutDetails{
+  
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 46px;
+  color: black;
+  width: 74vw;
+  align-items: center;
+  
+
+}
+form{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+form input{
+  height: 58px;
+  width: 40%;
+  margin: 15px;
+  border-radius: 10px;
+  background-color: rgb(233, 188, 188);
+  border: 1px solid white;
+  padding: 15px;
+  font-size: 18px;
+  color: black;
+  
+}
+textarea{
+  margin: 5px 15px;
+  border-radius: 10px;
+  background-color: rgb(233, 188, 188);
+  border: 1px solid white;
+  padding: 15px;
+  font-size: 20px;
+  width: 40%;
+  font-family: 'Baloo Tamma 2', cursive;
+  color: black;
+}
+input[type='submit']{
+  background-color: #f75023;
+  color: white;
+  border-radius: 25px;
+  border: none;
+}
+.BlogHeading{
+  text-align: center;
+  font-size: 50px;
+}

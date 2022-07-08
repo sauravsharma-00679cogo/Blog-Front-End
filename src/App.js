@@ -36,9 +36,10 @@ function App() {
   return (
     <>
     <BrowserRouter>
+    <Navbar/>
     <Routes>
       
-      <Route path="/home" element={<Home />} />
+      <Route path="/" element={<Home />} />
       <Route path="/blog" element={Blogs.map((bl) =>{
           return < Blog  auth = {bl.Title} title ={bl.Year} desc ={bl.Type} src={bl.Poster}/>
          })} />

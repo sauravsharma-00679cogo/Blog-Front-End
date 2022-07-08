@@ -169,13 +169,13 @@ header div img{
   
 
 }
-form{
+.form{
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-form input{
+.form input{
   height: 58px;
   width: 40%;
   margin: 15px;
